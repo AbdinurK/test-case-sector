@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-block {
+    background: linear-gradient(74.41deg, #1C2149 7.45%, #272E72 117.36%);
+    max-height: 760px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.header {
+    padding: 33.5px 0;
+}
+.header__list {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    padding-left: 0;
+    font-size: 14px;
+}
+.header__list li {
+    margin-right: 25px;
+}
+.header__list li:last-child {
+    margin-right: 0;
+}
+.header__list li a {
+    text-decoration: none;
+    color: #99A6D3;
+    position: relative;
+}
+.header__list li a::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    transform: scaleX(0);
+    background-color:  #F15713;
+    transition: transform 0.3s;
+}
+.header__list li a:hover::after {
+    transform:  scaleX(.5);
+}
+
+hr {
+    height: 20px;
+}
+.logo__header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 580px;
+    margin: 20px 0;
+}
+.title {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.title__content {
+    margin-top: 60px;
+    max-width: 660px;
+}
+.title__hero {
+    font-size: 33px;
+    margin: 0;
+}
+.title__description {
+    font-size: 21px;
+    font-weight: 400;
+}
+.title__info {
+    font-size: 18px;
+    color: #99A6D3;
+    font-weight: 400;
+}
+.title__extra {
+    color: #F15713;
+    font-weight: 600;
+    margin: 0;
+}
+.fa.fa-caret-down {
+    background: #F15713;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 450px;
+    margin-top: 40px;
+}
+.buttons > button {
+    border: none;
+    color: white;
+    box-shadow: 1px 8px 4px rgba(15, 18, 43, 0.25);
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+}
+.buttons__demo {
+    padding: 6px 20px;
+    background: #F15713;
+    margin: 0;
+}
+.buttons__buy {
+    background: #262E72;
+    padding: 6px 50px;
+}
+.buttons__text {
+    font-size: 16px;
+    margin: 0;
+}
+.review-block {
+    background: linear-gradient(180deg, #F7F7F7 0%, rgba(255, 255, 255, 0) 100%);
+    margin-top: 103px;
+}
+.review-block__container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.title__secondary {
+    margin: 10px 0 40px;
+    font-size: 22px;
+}
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+}
+.testimonials__info {
+    background: #FFFFFF;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(32, 31, 78, 0.08);
+    max-width: 435px;
+}
+.testimonials__title {
+    margin: 0;
+}
+.testimonials__description {
+    margin: 0;
+    font-size: 14px;
+}
+.testimonials__role {
+    margin: 5px 0 20px;
+    color: #7F8FA4;
+}
+.brands {
+    display: flex;
+    margin-top: 110px;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+.grid:hover > .programs__menu {
+    display: grid;
+}
+
+.programs__menu {
+    background: white;
+    position: absolute;
+    top: 70px;
+    right: 170px;
+    width: 742px;
+    border-radius: 10px;
+    display: none;
+    color: black;
+    padding: 20px;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+.menu__name {
+    margin: 0 0 20px;
+    font-weight: 500;
+    color: #334150;
+    font-size: 16px;
+}
+.menu__list {
+    list-style: none;
+    padding-left: 0;
+}
+.menu__list li a {
+    text-decoration: none;
+    color: black;
+}
+.menu__list li p {
+    color: #7F8FA4;
+}
+.divider {
+    border: 1px solid #E1E8EE;
+    height: 300px;
+    margin: 7px 20px 7px 60px;
+}
+.arrow {
+    position: relative;
+    top: -20px;
+    left: 720px;
+}
